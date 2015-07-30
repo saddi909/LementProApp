@@ -1,0 +1,57 @@
+<lementProApp.holder.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat_layout"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context=".TasksList">
+
+    <ListView
+        android:id="@+id/listDiscussions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#666666"
+        android:dividerHeight="4px"
+        android:layout_marginBottom="60dp"/>
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/txtEditChat"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="false"
+            android:layout_toLeftOf="@+id/imgChatSend"
+            android:layout_toStartOf="@+id/imgChatSend"
+            android:hint="Type Message"
+            android:maxLines="4"
+            android:singleLine="false"
+            android:layout_width ="match_parent"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_weight ="1"
+            android:textSize="18sp"
+            android:paddingLeft="4dp" />
+
+        <ImageView android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imgChatSend"
+            android:layout_width="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/txtEditChat"
+            android:src="@drawable/android_send" />
+</RelativeLayout>
+
+    </LinearLayout>
+
+</lementProApp.holder.SizeNotifierRelativeLayout>

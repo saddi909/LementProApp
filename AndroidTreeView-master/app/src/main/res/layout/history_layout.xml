@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_alignParentTop="true"
+                android:id="@+id/UpperLayout"
+                android:padding="5dp"
+                android:background="#E1E1E1">
+
+                <TextView
+                    android:id="@+id/txtHistoryUser"
+                    android:text="Author"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/txtHistoryDate"
+                    android:text="Date"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"
+                    android:layout_below="@+id/UpperLayout"
+                    android:gravity="bottom"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txtHistoryDescription"
+                        android:text="A quick brown fox jumps over a white lazy dog.A quick brown fox jumps over a white lazy dog"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="none"
+                        android:maxLines="100"
+                        android:scrollHorizontally="false" />
+                </RelativeLayout>
+
+</RelativeLayout>
+

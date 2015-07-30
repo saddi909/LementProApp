@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_alignParentTop="true"
+        android:id="@+id/UpperLayout"
+        android:padding="5dp"
+        android:background="#E1E1E1">
+
+        <TextView
+            android:id="@+id/txtStageName"
+            android:text="Stage"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/PersonLayout"
+        android:padding="5dp"
+        android:layout_below="@+id/UpperLayout"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/txtDisplayName"
+            android:text="Display Name"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_below="@+id/PersonLayout"
+        android:gravity="bottom"
+        android:padding="5dp"
+        android:id="@+id/DateLayout">
+        <TextView
+            android:id="@+id/txtstartDate"
+            android:text="Start"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/txtendDate"
+            android:text="End"
+            android:textColor="#A2CCAB"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/CommentLayout"
+        android:padding="5dp"
+        android:layout_below="@+id/DateLayout"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/txtComment"
+            android:text="Comment"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

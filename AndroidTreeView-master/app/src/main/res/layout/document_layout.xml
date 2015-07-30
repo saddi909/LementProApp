@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutDocument"
+        android:background="#C1C1C1"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtDocumentName"
+            android:text="FileName"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:maxLines="5"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutDescription"
+        android:layout_below="@+id/LayoutDocument"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtDescription"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:maxLines="5"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutAuthor"
+        android:layout_below="@+id/LayoutDescription"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtAuthor"
+            android:text="Author"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:maxLines="5"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_below="@+id/LayoutAuthor"
+        android:gravity="bottom"
+        android:padding="5dp"
+        android:id="@+id/LayoutDates">
+        <TextView
+            android:text="Registration Date:"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRegDate"></TextView>
+        <TextView
+            android:id="@+id/txtRegistrationDate"
+            android:text="RegistrationDate"
+            android:textColor="#A1A1A1"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtRegDate"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_below="@+id/LayoutDates"
+        android:gravity="bottom"
+        android:padding="5dp"
+        android:id="@+id/LayoutDeadline">
+        <TextView
+            android:text="DeadLine Date:"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDeadlineDate"></TextView>
+        <TextView
+            android:id="@+id/txtDeadline"
+            android:text="Deadline date"
+            android:textColor="#A1A1A1"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtDeadlineDate"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_below="@+id/LayoutDeadline"
+        android:gravity="bottom"
+        android:padding="5dp"
+        android:id="@+id/LayoutlastModified">
+        <TextView
+            android:text="Last Modified Date:"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtModifiedDate"></TextView>
+        <TextView
+            android:id="@+id/txtlastModified"
+            android:text="Last Modified date"
+            android:textColor="#A1A1A1"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtModifiedDate"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_below="@+id/LayoutlastModified"
+        android:gravity="bottom"
+        android:padding="5dp"
+        android:id="@+id/LayoutBottom">
+        <TextView
+            android:text="Closed Date:"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCDate"></TextView>
+        <TextView
+            android:id="@+id/txtClosedDate"
+            android:text="Closed date"
+            android:textColor="#A1A1A1"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtCDate"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
